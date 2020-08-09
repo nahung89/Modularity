@@ -1,0 +1,7 @@
+#################
+# carthage update --platform iOS
+# carthage build --platform iOS
+# carthage update --no-use-binaries --configuration Debug --platform iOS RxSwift
+#################
+
+github "Alamofire/Alamofire"

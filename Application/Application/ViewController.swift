@@ -15,6 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         let core = CoreDummy()
         print("x = \(core.x)")
+        core.hello()
     }
 
 
