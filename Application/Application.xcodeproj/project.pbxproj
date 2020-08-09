@@ -12,7 +12,23 @@
 		112A79DC24E049700021886D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 112A79DA24E049700021886D /* Main.storyboard */; };
 		112A79DE24E049700021886D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 112A79DD24E049700021886D /* Assets.xcassets */; };
 		112A79E124E049700021886D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 112A79DF24E049700021886D /* LaunchScreen.storyboard */; };
+		112A7A1D24E04E000021886D /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 112A7A1C24E04E000021886D /* Core.framework */; };
+		112A7A1E24E04E000021886D /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 112A7A1C24E04E000021886D /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		112A7A1F24E04E000021886D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				112A7A1E24E04E000021886D /* Core.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		112A79D124E049700021886D /* Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Application.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +38,7 @@
 		112A79DD24E049700021886D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		112A79E024E049700021886D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		112A79E224E049700021886D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		112A7A1C24E04E000021886D /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				112A7A1D24E04E000021886D /* Core.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +58,7 @@
 			children = (
 				112A79D324E049700021886D /* Application */,
 				112A79D224E049700021886D /* Products */,
+				112A7A1B24E04E000021886D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +83,14 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
+		112A7A1B24E04E000021886D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				112A7A1C24E04E000021886D /* Core.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +101,7 @@
 				112A79CD24E049700021886D /* Sources */,
 				112A79CE24E049700021886D /* Frameworks */,
 				112A79CF24E049700021886D /* Resources */,
+				112A7A1F24E04E000021886D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -281,6 +309,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2HAJP9Q8N;
 				INFOPLIST_FILE = Application/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -299,6 +328,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2HAJP9Q8N;
 				INFOPLIST_FILE = Application/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
