@@ -336,6 +336,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 30;
 				DEVELOPMENT_TEAM = Z2HAJP9Q8N;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -359,6 +360,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 30;
 				DEVELOPMENT_TEAM = Z2HAJP9Q8N;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
