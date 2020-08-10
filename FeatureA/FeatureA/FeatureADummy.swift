@@ -14,6 +14,5 @@ public class FeatureADummy {
 
     public init() {
         coreDummy = CoreDummy()
-        
     }
 }

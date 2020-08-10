@@ -10,25 +10,8 @@
 		112A7A5524E0D54B0021886D /* FeatureA.h in Headers */ = {isa = PBXBuildFile; fileRef = 112A7A5324E0D54B0021886D /* FeatureA.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		112A7A6724E0D6370021886D /* FeatureADummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112A7A6624E0D6370021886D /* FeatureADummy.swift */; };
 		112A7A6824E0D6CF0021886D /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 112A7A5C24E0D56D0021886D /* Core.framework */; };
-		112A7A6924E0D6CF0021886D /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 112A7A5C24E0D56D0021886D /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		112A7A8324E0DF180021886D /* UIComponent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 112A7A8224E0DF180021886D /* UIComponent.framework */; };
-		112A7A8424E0DF180021886D /* UIComponent.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 112A7A8224E0DF180021886D /* UIComponent.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		112A7A6A24E0D6CF0021886D /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				112A7A8424E0DF180021886D /* UIComponent.framework in Embed Frameworks */,
-				112A7A6924E0D6CF0021886D /* Core.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		112A7A5024E0D54B0021886D /* FeatureA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeatureA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,7 +93,6 @@
 				112A7A4C24E0D54B0021886D /* Sources */,
 				112A7A4D24E0D54B0021886D /* Frameworks */,
 				112A7A4E24E0D54B0021886D /* Resources */,
-				112A7A6A24E0D6CF0021886D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
