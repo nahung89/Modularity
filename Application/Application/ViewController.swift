@@ -8,6 +8,7 @@
 
 import UIKit
 import Core
+import FeatureA
 
 class ViewController: UIViewController {
 
@@ -16,6 +17,9 @@ class ViewController: UIViewController {
         let core = CoreDummy()
         print("x = \(core.x)")
         core.hello()
+
+        let feature = FeatureADummy()
+        print("feature = \(feature) --- \(feature.coreDummy)")
     }
 
 

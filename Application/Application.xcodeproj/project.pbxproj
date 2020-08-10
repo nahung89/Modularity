@@ -15,6 +15,10 @@
 		112A7A3E24E055BF0021886D /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 112A7A3D24E055BF0021886D /* Core.framework */; };
 		112A7A3F24E055C00021886D /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 112A7A3D24E055BF0021886D /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		112A7A4124E055C50021886D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 112A7A4024E055C50021886D /* Alamofire.framework */; };
+		112A7A6424E0D5F10021886D /* FeatureA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 112A7A6324E0D5F10021886D /* FeatureA.framework */; };
+		112A7A6524E0D5F10021886D /* FeatureA.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 112A7A6324E0D5F10021886D /* FeatureA.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		112A7A8624E0DF430021886D /* UIComponent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 112A7A8524E0DF430021886D /* UIComponent.framework */; };
+		112A7A8724E0DF430021886D /* UIComponent.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 112A7A8524E0DF430021886D /* UIComponent.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,8 @@
 			dstSubfolderSpec = 10;
 			files = (
 				112A7A3F24E055C00021886D /* Core.framework in Embed Frameworks */,
+				112A7A8724E0DF430021886D /* UIComponent.framework in Embed Frameworks */,
+				112A7A6524E0D5F10021886D /* FeatureA.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -41,6 +47,8 @@
 		112A79E224E049700021886D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		112A7A3D24E055BF0021886D /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		112A7A4024E055C50021886D /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = ../Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		112A7A6324E0D5F10021886D /* FeatureA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FeatureA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		112A7A8524E0DF430021886D /* UIComponent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UIComponent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +57,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				112A7A3E24E055BF0021886D /* Core.framework in Frameworks */,
+				112A7A6424E0D5F10021886D /* FeatureA.framework in Frameworks */,
+				112A7A8624E0DF430021886D /* UIComponent.framework in Frameworks */,
 				112A7A4124E055C50021886D /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -91,6 +101,8 @@
 			children = (
 				112A7A4024E055C50021886D /* Alamofire.framework */,
 				112A7A3D24E055BF0021886D /* Core.framework */,
+				112A7A8524E0DF430021886D /* UIComponent.framework */,
+				112A7A6324E0D5F10021886D /* FeatureA.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
