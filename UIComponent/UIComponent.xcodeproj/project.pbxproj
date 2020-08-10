@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		112A7A7A24E0DEA10021886D /* UIComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 112A7A7824E0DEA10021886D /* UIComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		112A7A8124E0DEB20021886D /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 112A7A8024E0DEB20021886D /* Media.xcassets */; };
+		112A7B0124E105F20021886D /* Tracking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 112A7B0024E105F20021886D /* Tracking.framework */; };
+		112A7B1324E1074B0021886D /* ComponentDummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112A7B1224E1074B0021886D /* ComponentDummy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +18,8 @@
 		112A7A7824E0DEA10021886D /* UIComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIComponent.h; sourceTree = "<group>"; };
 		112A7A7924E0DEA10021886D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		112A7A8024E0DEB20021886D /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		112A7B0024E105F20021886D /* Tracking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Tracking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		112A7B1224E1074B0021886D /* ComponentDummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentDummy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				112A7B0124E105F20021886D /* Tracking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -34,6 +39,7 @@
 			children = (
 				112A7A7724E0DEA10021886D /* UIComponent */,
 				112A7A7624E0DEA10021886D /* Products */,
+				112A7AFF24E105F20021886D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,10 +55,19 @@
 			isa = PBXGroup;
 			children = (
 				112A7A7824E0DEA10021886D /* UIComponent.h */,
+				112A7B1224E1074B0021886D /* ComponentDummy.swift */,
 				112A7A7924E0DEA10021886D /* Info.plist */,
 				112A7A8024E0DEB20021886D /* Media.xcassets */,
 			);
 			path = UIComponent;
+			sourceTree = "<group>";
+		};
+		112A7AFF24E105F20021886D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				112A7B0024E105F20021886D /* Tracking.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,6 +113,7 @@
 				TargetAttributes = {
 					112A7A7424E0DEA10021886D = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 					};
 				};
 			};
@@ -135,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				112A7B1324E1074B0021886D /* ComponentDummy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +282,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -281,6 +299,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nah.UIComponent;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -290,6 +310,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -306,6 +327,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nah.UIComponent;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

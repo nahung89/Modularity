@@ -9,6 +9,8 @@
 import UIKit
 import Core
 import FeatureA
+import FeatureC
+import FeatureD
 
 class ViewController: UIViewController {
 
@@ -20,6 +22,8 @@ class ViewController: UIViewController {
 
         let feature = FeatureADummy()
         print("feature = \(feature) --- \(feature.coreDummy)")
+
+        let featureC = FeatureCDummy()
     }
 
 
