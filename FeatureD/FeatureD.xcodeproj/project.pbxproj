@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		112A7ADF24E1058B0021886D /* FeatureD.h in Headers */ = {isa = PBXBuildFile; fileRef = 112A7ADD24E1058B0021886D /* FeatureD.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		112A7AFC24E105B80021886D /* Tracking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 112A7AFB24E105B80021886D /* Tracking.framework */; };
+		112A7B3D24E136B40021886D /* Logger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 112A7B3C24E136B40021886D /* Logger.framework */; };
+		112A7B4424E136E10021886D /* FeatureDDummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112A7B4324E136E10021886D /* FeatureDDummy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +18,8 @@
 		112A7ADD24E1058B0021886D /* FeatureD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeatureD.h; sourceTree = "<group>"; };
 		112A7ADE24E1058B0021886D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		112A7AFB24E105B80021886D /* Tracking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Tracking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		112A7B3C24E136B40021886D /* Logger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Logger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		112A7B4324E136E10021886D /* FeatureDDummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureDDummy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				112A7B3D24E136B40021886D /* Logger.framework in Frameworks */,
 				112A7AFC24E105B80021886D /* Tracking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				112A7ADD24E1058B0021886D /* FeatureD.h */,
+				112A7B4324E136E10021886D /* FeatureDDummy.swift */,
 				112A7ADE24E1058B0021886D /* Info.plist */,
 			);
 			path = FeatureD;
@@ -60,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				112A7AFB24E105B80021886D /* Tracking.framework */,
+				112A7B3C24E136B40021886D /* Logger.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -107,6 +114,7 @@
 				TargetAttributes = {
 					112A7AD924E1058B0021886D = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 					};
 				};
 			};
@@ -143,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				112A7B4424E136E10021886D /* FeatureDDummy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +282,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -290,6 +300,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -299,6 +310,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;

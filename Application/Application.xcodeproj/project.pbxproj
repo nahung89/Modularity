@@ -27,6 +27,8 @@
 		112A7B0A24E1060B0021886D /* Tracking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 112A7B0824E1060B0021886D /* Tracking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		112A7B0C24E106160021886D /* FeatureD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 112A7B0B24E106160021886D /* FeatureD.framework */; };
 		112A7B0D24E106160021886D /* FeatureD.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 112A7B0B24E106160021886D /* FeatureD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		112A7B4124E136BE0021886D /* Logger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 112A7B4024E136BE0021886D /* Logger.framework */; };
+		112A7B4224E136BE0021886D /* Logger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 112A7B4024E136BE0021886D /* Logger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +42,7 @@
 				112A7A3F24E055C00021886D /* Core.framework in Embed Frameworks */,
 				112A7AC124E0E0090021886D /* FeatureC.framework in Embed Frameworks */,
 				112A7B0A24E1060B0021886D /* Tracking.framework in Embed Frameworks */,
+				112A7B4224E136BE0021886D /* Logger.framework in Embed Frameworks */,
 				112A7A8724E0DF430021886D /* UIComponent.framework in Embed Frameworks */,
 				112A7A6524E0D5F10021886D /* FeatureA.framework in Embed Frameworks */,
 				112A7B0D24E106160021886D /* FeatureD.framework in Embed Frameworks */,
@@ -65,6 +68,7 @@
 		112A7ABF24E0E0090021886D /* FeatureC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FeatureC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		112A7B0824E1060B0021886D /* Tracking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Tracking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		112A7B0B24E106160021886D /* FeatureD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FeatureD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		112A7B4024E136BE0021886D /* Logger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Logger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,7 @@
 				112A7A6424E0D5F10021886D /* FeatureA.framework in Frameworks */,
 				112A7A8624E0DF430021886D /* UIComponent.framework in Frameworks */,
 				112A7A4124E055C50021886D /* Alamofire.framework in Frameworks */,
+				112A7B4124E136BE0021886D /* Logger.framework in Frameworks */,
 				112A7B0C24E106160021886D /* FeatureD.framework in Frameworks */,
 				112A7AC024E0E0090021886D /* FeatureC.framework in Frameworks */,
 			);
@@ -127,6 +132,7 @@
 				112A7B0B24E106160021886D /* FeatureD.framework */,
 				112A7A6324E0D5F10021886D /* FeatureA.framework */,
 				112A7B0824E1060B0021886D /* Tracking.framework */,
+				112A7B4024E136BE0021886D /* Logger.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

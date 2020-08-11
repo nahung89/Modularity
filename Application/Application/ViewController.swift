@@ -18,12 +18,17 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         let core = CoreDummy()
         print("x = \(core.x)")
-        core.hello()
+        core.hello { () in
+            print("Success")
+        }
 
         let feature = FeatureADummy()
         print("feature = \(feature) --- \(feature.coreDummy)")
 
         let featureC = FeatureCDummy()
+        print("feature = \(featureC)")
+
+        _ = FeatureDDummy()
     }
 
 

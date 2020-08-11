@@ -18,7 +18,11 @@ public class CoreDummy {
         session = Session.default
     }
 
-    public func hello() {
+    public func hello(completion: @escaping () -> Void) {
         print("session: \(session)")
+        AF.request("https://httpbin.org/get").response { response in
+            debugPrint(response)
+            completion()
+        }
     }
 }
